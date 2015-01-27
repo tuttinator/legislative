@@ -12,8 +12,8 @@ gemfile:
   - Gemfile
 before_script:
   - sudo apt-get install python-virtualenv
-  - bash start_local_writeit.bash
-  - bash start_local_popit_api.bash
+  - bash poplus_components/start_local_writeit.bash
+  - bash poplus_components/start_local_popit_api.bash
   #- start_local_writeit.bash
   # updating bundle environment
   - bundle install --without production
