@@ -7,8 +7,8 @@ describe CommunicationsController do
       get 'index', locale: 'es'
       response.should be_success
     end
-    
   end
+
   describe "writeit form creation" do
 
     it "obtains list of congressmen" do
