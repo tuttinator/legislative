@@ -19,7 +19,7 @@ describe NotifiersController do
 			@bill2 = "8906-09"
 			@users_subscribed_to_bill2 = [12]
 			post :create, bill: @bill2, users_id_subscribed: @users_subscribed_to_bill2
-			
+
 			@notifier = Notifier.find_by_user_id(12)
 			@notifier.bills.should eq(["9024-07", "8906-09"])
 		end
